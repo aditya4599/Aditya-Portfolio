@@ -16,16 +16,46 @@
 export const Work = [
   {
     id: 1,
-    name: "Restricted Zone Monitor",
+    name: "WALL-E and EVE's Signal",
     description:
-      "Computer-vision monitoring of restricted areas in video footage: a polygon region of interest, YOLOv8 object detection on each frame, and CSV logging of entry events.",
-    status: "Python project",
-    tags: ["python", "yolov8", "pytorch", "opencv"],
+      "An autonomous agent that searches a partially observed grid world for a hidden target, using A* pathfinding, a Bayesian belief map and a battery-aware planner.",
+    status: "169 tests · 100-seed experiments",
+    tags: ["python", "a-star", "bayesian", "numpy"],
     demo: null,
-    github: null,
+    github: "https://github.com/aditya4599/walle",
   },
   {
     id: 2,
+    name: "ADI Voice Assistant",
+    description:
+      "A self-hosted smart speaker: an ESP32-S3 with an on-device wake word streams speech to a FastAPI backend that replies using an LLM and tools like Spotify, weather and web search.",
+    status: "Firmware builds · on-device testing next",
+    tags: ["esp32", "fastapi", "python", "llm"],
+    demo: null,
+    github: "https://github.com/aditya4599/homeassistant",
+  },
+  {
+    id: 3,
+    name: "FinSearch",
+    description:
+      "Semantic search for financial news: headlines embedded with SBERT or FinBERT and indexed in FAISS, so queries match by meaning, with optional fine-tuning and live Finnhub news.",
+    status: "Retrieval metrics built in",
+    tags: ["python", "pytorch", "faiss", "nlp"],
+    demo: null,
+    github: "https://github.com/aditya4599/finhub",
+  },
+  {
+    id: 4,
+    name: "Restricted Zone Monitor",
+    description:
+      "Live webcam monitoring with YOLOv8: click four points to draw a restricted zone, see breach alerts on screen, and log entry, exit and time in the zone to CSV.",
+    status: "Python project",
+    tags: ["python", "yolov8", "opencv", "pytorch"],
+    demo: null,
+    github: "https://github.com/aditya4599/restricted-zone-monitor",
+  },
+  {
+    id: 5,
     name: "ThesisPoint Research",
     description:
       "A publishing platform for company financial research and research documents, with market-data integration.",
@@ -35,32 +65,12 @@ export const Work = [
     github: null,
   },
   {
-    id: 3,
+    id: 6,
     name: "Smart Fish Aquarium",
     description:
       "An IoT experiment in water-quality monitoring: an ESP32 reading temperature, pH and turbidity sensors.",
     status: "Sensing in progress · ML analysis planned",
     tags: ["esp32", "iot", "embedded"],
-    demo: null,
-    github: null,
-  },
-  {
-    id: 4,
-    name: "Hotel Management System",
-    description:
-      "Rooms, guests and bookings — an exercise in modelling data and the rules around it.",
-    status: "Fundamentals project",
-    tags: ["database", "app-logic"],
-    demo: null,
-    github: null,
-  },
-  {
-    id: 5,
-    name: "Bank Management System",
-    description:
-      "Accounts, deposits, withdrawals and balances — practising application logic, validation and persistent records.",
-    status: "Fundamentals project",
-    tags: ["database", "app-logic"],
     demo: null,
     github: null,
   },

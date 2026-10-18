@@ -34,13 +34,13 @@ const float = keyframes`
 `
 const Spaceman = styled(motion.div)`
 position: absolute;
-top: 10%;
-right: 5%;
+top: 15%;
+right: 15%;
 width: 20vw;
 img{
-    width: 100%;
+    width: 150%;
     height: auto;
-    animation: ${float} 4s ease infinite;
+    animation: ${float} 6s ease infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

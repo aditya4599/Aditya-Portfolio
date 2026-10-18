@@ -50,7 +50,7 @@ min-width: 0;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
